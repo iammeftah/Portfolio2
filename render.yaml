@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: spring-boot-app
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    pullRequestPreviewsEnabled: true
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
+    healthCheckPath: /actuator/health
+    plan: free
+    numInstances: 1
