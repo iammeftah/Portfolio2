@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" th:href="@{/css/output.css}">
+</head>
+<body class="bg-gray-100">
+<header class="bg-blue-500 text-white p-4">
+    <nav>
+        <ul class="flex space-x-4">
+            <li><a th:href="@{/home}" class="hover:text-gray-200">Home</a></li>
+            <li><a th:href="@{/about}" class="hover:text-gray-200">About</a></li>
+            <li><a th:href="@{/projects}" class="hover:text-gray-200">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container mx-auto mt-8 p-4">
+    <h1 class="text-3xl font-bold mb-4">My Projects</h1>
+    <ul class="list-disc list-inside space-y-2">
+        <li class="text-gray-700">Project 1</li>
+        <li class="text-gray-700">Project 2</li>
+        <li class="text-gray-700">Project 3</li>
+    </ul>
+</main>
+<footer class="bg-gray-200 p-4 mt-8">
+    <p class="text-center text-gray-600">&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
+</body>
+</html>
