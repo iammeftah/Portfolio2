@@ -5,7 +5,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@PropertySource("file:.env")
+//@PropertySource("file:.env")
 public class Portfolio2Application {
 
 	public static void main(String[] args) {
