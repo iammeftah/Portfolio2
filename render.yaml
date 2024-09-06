@@ -5,8 +5,8 @@ services:
     dockerfilePath: ./Dockerfile
     pullRequestPreviewsEnabled: true
     envVars:
-      - key: SPRING_PROFILES_ACTIVE
-        value: production
+      - key: PORT
+        value: 8080
     healthCheckPath: /actuator/health
     plan: free
     numInstances: 1
